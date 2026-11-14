@@ -117,11 +117,25 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
   m_ExitTime: 0.75
-  m_HasExitTime: 1
+  m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!114 &-6734930629702098574
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c4a4d0dbdeca3b489e374bfab25dad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MushMonAnimTrigHandler
+  isActiveJumping: 0
+  attackTrigger: 0
 --- !u!1102 &-5900632285493585108
 AnimatorState:
   serializedVersion: 6
@@ -136,7 +150,8 @@ AnimatorState:
   - {fileID: -7413457414306499138}
   - {fileID: -7221785608730063439}
   - {fileID: -8906801903902671290}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: -1972852458133751393}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -189,7 +204,8 @@ AnimatorState:
   m_Transitions:
   - {fileID: 6607309574650496366}
   - {fileID: 6346609161057955787}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: -1128376950377375751}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -204,6 +220,20 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!114 &-3612372982472257577
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c4a4d0dbdeca3b489e374bfab25dad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MushMonAnimTrigHandler
+  isActiveJumping: 0
+  attackTrigger: 0
 --- !u!1102 &-3342800002733497314
 AnimatorState:
   serializedVersion: 6
@@ -215,7 +245,8 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: -6734930629702098574}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -264,6 +295,20 @@ AnimatorStateMachine:
   m_ExitPosition: {x: 890, y: 260, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 5835063914442899034}
+--- !u!114 &-1972852458133751393
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c4a4d0dbdeca3b489e374bfab25dad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MushMonAnimTrigHandler
+  isActiveJumping: 0
+  attackTrigger: 0
 --- !u!1101 &-1355921449846932719
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -289,6 +334,20 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!114 &-1128376950377375751
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c4a4d0dbdeca3b489e374bfab25dad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MushMonAnimTrigHandler
+  isActiveJumping: 0
+  attackTrigger: 0
 --- !u!1101 &-738900810945577951
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -309,7 +368,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
   m_ExitTime: 0.75
-  m_HasExitTime: 1
+  m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -355,6 +414,20 @@ AnimatorController:
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
   m_EvaluateTransitionsOnStart: 1
+--- !u!114 &293362902613550176
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c4a4d0dbdeca3b489e374bfab25dad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  isActiveJumping: 0
+  attackTrigger: 0
 --- !u!1101 &1885288116236770003
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -395,7 +468,8 @@ AnimatorState:
   - {fileID: -9099293221623543258}
   - {fileID: 7258990653386682533}
   - {fileID: -4240410505089682989}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: 293362902613550176}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -424,7 +498,8 @@ AnimatorState:
   - {fileID: -8918477212569431634}
   - {fileID: -738900810945577951}
   - {fileID: -1355921449846932719}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: -3612372982472257577}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -506,7 +581,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
   m_ExitTime: 0.75
-  m_HasExitTime: 1
+  m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
